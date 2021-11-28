@@ -12,8 +12,8 @@ public class Question {
         this.textResId = textResId;
     }
 
-    Question(int textResId, boolean answer){
-        this.textResId=textResId;
-        this.answer=answer;
+    Question(int textResId, boolean answer) {
+        this.textResId = textResId;
+        this.answer = answer;
     }
 }

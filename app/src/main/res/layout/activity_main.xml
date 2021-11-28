@@ -9,9 +9,9 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        tools:ignore="MissingConstraints"
+        android:gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
+        tools:ignore="MissingConstraints">
 
 
         <TextView
@@ -19,22 +19,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-        <TableRow
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content">
-        <Button
-            android:id="@+id/falseButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="@string/falseButton" />
 
-        <Button
-            android:id="@+id/trueButton"
+        <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="@string/trueButton" />
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/falseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/falseButton" />
+
+            <Button
+                android:id="@+id/trueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/trueButton" />
         </TableRow>
 
         <Button
@@ -43,6 +45,13 @@
             android:layout_height="wrap_content"
             android:drawableEnd="@drawable/arrow_right"
             android:text="@string/nextButton" />
+
+        <Button
+            android:id="@+id/cheat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="@string/cheat_button" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
